@@ -1,0 +1,79 @@
+header {
+    display: flex;}
+
+.Titulo {
+    Color: #ffdd33;
+    font-family: 'Montserrat', sans-serif; font-size: 70px; text-align:center;
+    size: 200px; width: 94% ; margin: 0px;
+    background-image: url("C:/Users/david/Desktop/Paginita/Fonditos/Titulimag.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 200px;}
+
+.DivRs {
+    background-color: #ffdd3386;
+    display: flex; flex-direction: column; align-items: center;
+    width: 100px; margin: 10px; padding: 10px;}
+.RedSocial {
+    background-color: #202020; color: #ffdd33; 
+    font-size: 20px; text-align: center; text-decoration: none;
+    padding: 7px; margin: 3px 0px;}
+.RedSocial:hover {
+    background-color: #ffdd3386;
+}
+
+.Navbarrita{
+    background-color: #ffdd3386; padding: 10px ; margin: 10px; text-align: center; 
+    display: flex; justify-content: space-around;}
+
+.Barrita{
+    background-color: #202020; color: #ffdd33; 
+    font-size: 20px; padding: 10px 30px; text-decoration: none; display: inline-block;}
+.Barrita:hover{
+    background-color: #ffdd3386;}
+
+.BotonRs{
+    background-color: #202020;color: #ffdd33;
+    font-size: 20px; padding: 10px 30px; border: 2px solid #ffdd33;
+    display: none;}
+
+.BotonMenu{
+    background-color: #202020;color: #ffdd33;
+    font-size: 20px; padding: 10px 30px; border: 2px solid #ffdd33;
+    display: none;}
+
+.SeccionJuegos{  
+    background-color: #1d1d1d7b; border: 4px solid #1d1d1d7b ; padding: 10px 30px;
+    display: flex; flex-wrap: wrap;flex: 1 1 auto ;align-content: space-around;
+    margin: 30px 60px; width: auto;
+    justify-content: space-around;}
+
+.DivsJuegos{
+    background-color: #1d1d1d7b; padding: 0 15px; border: 2px solid #1d1d1d7b; 
+    border-radius: 10px 20px; width: 300px; margin: 0 15px; box-sizing: border-box;
+    display: flex; flex-direction: column ; flex: 1 1 auto ;}
+.DivsJuegos:hover{
+    border: 2px solid #ffdd33; box-shadow: 0px 0px 10px #ffdd33;}
+
+.h21 {
+    font-size: 40px; text-align: center; padding: 10px 30px; width: auto;
+    color: #ffdd33; background-color:#202020;}
+
+.Logojuegos {width: 200px; height: 180px;}
+
+@media (max-width: 700px) {
+    header {display: block;}
+    .Titulo {width: 100%;}
+    .DivRs { width: auto ;flex-direction: column;}
+    .BotonRs {display: block; width: 100%;}
+    .RedSocial {margin: 3px 30px;}
+    .Notoy1 {display: none;}}
+
+@media (max-width: 580px) {
+    .Titulo {font-size: 50px;}
+    .Navbarrita {flex-direction: column;}
+    .Barrita {margin: 3px 30px;}
+    .BotonMenu {display: inline-block;}
+    .Notoy2 {display: none;}}
+
+p {color: white; font-size: 20px;}

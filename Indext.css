@@ -1,0 +1,68 @@
+.margen {margin: 10px; box-sizing: border-box; border-radius: 5px;}
+.borde {border: 1px solid var(--CorPrincipal);}
+:root {
+    --CorPrincipal:#C43236;
+    --CorSecundario:rgb(196, 50, 54,0.5);
+    --CorFondo: linear-gradient(145deg, #202332a1, #272a3ea1);
+    --CorTexto: #ffdd33;
+  }
+
+body {
+    background-image: url(../Paginita/Images/System.gif) ;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2 {color: var(--CorTexto); font-size: 70px;}
+
+.DivGeneral {
+    display: flex; flex-flow: column nowrap;
+}
+    /* Barra de inicio */
+
+    .BarraInicio{ 
+        display: flex; align-items: center; height: 105px;
+        border-bottom: 2px solid var(--CorSecundario);
+        background: var(--CorFondo);}
+    
+        .LogoInicio{flex: 0 0 auto; display: flex; align-items: center; padding-left: 5px;
+            height:100px; text-shadow: 0 0 10px var(--CorPrincipal);}
+
+        .NavegaInicio{flex: 1 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around;}
+
+            .NavegaInicio a {color: var(--CorTexto); font-size: 20px; background: var(--CorFondo); text-align: center;
+                text-decoration: none; text-shadow: 0 0 10px var(--CorPrincipal); width: 21%; padding: 20px 15px;}
+            .NavegaInicio a:hover {box-shadow: 0 0 10px var(--CorPrincipal);}
+
+        .RedInicio{flex: 0 0 auto; display: flex; flex-wrap: wrap; justify-content: space-around;
+            border-radius: 40px; padding: 5px 0; border-bottom: 2px solid var(--CorSecundario);
+            background: var(--CorFondo);}
+            .LogoRed{width: 70px;}
+
+@media (max-width: 1301px) {
+    .LogoInicio h2 {font-size: 40px;}
+    }
+
+    /* Página 1 */
+
+    .Medio{
+        display: flex; align-items: center;}
+        .pandifogata{height: 100px;}
+
+    .Abajo{}
+ 
+    /* Página 2 */
+
+    .Medio2{
+        display: flex; justify-content: space-around; flex-wrap: wrap;}
+        .Juego {display: flex; flex-flow: column; text-align: center; align-items: center; width: 22%;}
+        .Juego:hover {box-shadow: 0 0 10px  var(--CorPrincipal);}
+        .TituJuego {color: var(--CorTexto); font-size: 40px; text-shadow: 0 0 10px var(--CorPrincipal); margin: 0px;}
+        .ImagJuego {width: 30%;}
+
+    .Abajo{}
+
+@media (max-width: 1610px) {
+    .Juego {width: 40%}
+}
